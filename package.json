@@ -1,0 +1,14 @@
+{
+  "name": "first-datascraping-tool",
+  "version": "0.0.1",
+  "homepage": "https://github.com/IJA-5/codingclass_onlinedatapublication",
+  "description": "Datascraping tool",
+  "author": "Ivi Apostolatos",
+  "main": "app.js",
+  "dependencies": {
+    "nodemon": "latest",
+    "express": "latest",
+    "request": "latest",
+    "cheerio": "latest"
+  }
+}

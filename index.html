@@ -1,1 +1,29 @@
-hello
+<!DOCTYPE html>
+<html>
+<head>
+  <script scr ="imdb_output.js"></script>
+  <script type ="text/javascript">
+  //THIS IS THE FUNCTION THAT LOADS OUR IMAGES
+  function load_imdb_images() {
+    var div = document.getElementById('data');
+
+    for(var i = 0; i < imdb_output.length; i++) {
+      var img = "<img class = 'title' scr='"+ imdb_output[i] + "' />";
+      div.innerHTML = div.innerHTML + img;
+    }
+  }
+</script>
+
+
+</head>
+<body onload="loadimdb_images()">
+  <div id="data">
+  <!-- HERE OUR IMAGES WILL BE LOADED -->
+  </div>
+
+
+
+</body>
+
+
+</html>
