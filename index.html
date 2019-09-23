@@ -6,7 +6,6 @@
   //THIS IS THE FUNCTION THAT LOADS OUR IMAGES
   function load_imdb_images() {
     var div = document.getElementById('data');
-
     for(var i = 0; i < imdb_output.length; i++) {
       var img = "<img class = 'title' scr='"+ imdb_output[i] + "' />";
       div.innerHTML = div.innerHTML + img;
