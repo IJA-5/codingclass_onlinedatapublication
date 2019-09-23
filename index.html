@@ -7,8 +7,10 @@
   function load_imdb_images() {
     var div = document.getElementById('data');
     for(var i = 0; i < imdb_output.length; i++) {
-      var img = "<img class = 'title' scr='"+ imdb_output[i] + "' />";
-      div.innerHTML = div.innerHTML + img;
+      if(imdb_output[i] != 'undefined') {
+        var img = "<img class = 'title' src='"+ imdb_output[i] + "' />";
+        div.innerHTML = div.innerHTML + img;
+      }
     }
   }
 </script>
